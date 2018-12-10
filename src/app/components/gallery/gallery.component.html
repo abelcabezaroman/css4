@@ -1,0 +1,13 @@
+<div class="b-gallery">
+  <div class="row">
+    <div class="col-md-4 col-sm-6 col-12" *ngFor="let item of gallery">
+      <div class="b-gallery__item">
+        <h3 class="b-gallery__title">{{item.title}}</h3>
+
+        <div class="b-gallery__img-container">
+          <img class="b-gallery__img" src="{{item.imgUrl}}">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

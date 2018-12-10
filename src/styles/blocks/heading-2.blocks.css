@@ -1,0 +1,5 @@
+.b-heading-2 {
+  display       : inline-block;
+  font-size     : 25px;
+  border-bottom : 5px solid var(--r-color-primary);
+}

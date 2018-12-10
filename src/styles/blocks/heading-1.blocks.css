@@ -1,0 +1,4 @@
+.b-heading-1 {
+  font-size     : 50px;
+  border-bottom : 5px solid var(--r-color-primary);
+}

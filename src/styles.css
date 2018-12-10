@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+/* INDEX */
+@import url('styles/blocks.index.css');
+@import url('styles/objects.index.css');
+@import url('styles/utilities.index.css');
+/* 3 PARTY */
+@import url("~bootstrap/dist/css/bootstrap-grid.css");
+@import url("~normalize.css/normalize.css");
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+/*GLOBAL STYLES*/
+:root {
+  --r-color-black         : #000;
+  --r-color-gray-50       : #ededed;
+  --r-color-gray-90       : #fffeee;
+  --r-color-white         : #fff;
+
+  --r-color-primary       : #3B9ADB;
+  --r-color-primary--o-20 : #3B9ADB20;
+
+  --r-color-war           : #DB8C1D;
+
+  --breakpoint-mobile     : 480px;
+}
+
+body {
+  color       : #333;
+  font-family : 'Raleway', sans-serif;
+}

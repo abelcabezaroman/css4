@@ -1,0 +1,9 @@
+.b-list {
+  --b-list--margin-left  : 15px;
+  --b-list--margin-leftt : 5px;
+  margin-left            : var(--b-list--margin-left);
+}
+
+.b-list__item {
+  margin-left : calc(2 * var(--b-list--margin-left) - var(--b-list--margin-leftt));
+}

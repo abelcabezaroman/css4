@@ -1,0 +1,24 @@
+.b-gallery {
+
+}
+
+.b-gallery__item {
+  margin : 10px;
+}
+
+.b-gallery__img-container {
+  border   : 5px solid var(--r-color-primary);
+  width    : 100%;
+  overflow : hidden;
+}
+
+.b-gallery__img {
+  display    : block;
+  width      : 100%;
+  transition : filter .5s ease-in-out;
+}
+
+.b-gallery__img:hover, .b-gallery__img:focus {
+  filter : grayscale(100%);
+}
+

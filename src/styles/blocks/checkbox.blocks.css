@@ -1,0 +1,46 @@
+.b-checkbox {
+  position    : relative;
+  padding     : 0 25px;
+  display     : flex;
+  align-items : center;
+}
+
+.b-checkbox__check {
+  position : absolute;
+  opacity  : 0;
+  cursor   : pointer;
+  height   : 0;
+  width    : 0;
+}
+
+.b-checkbox__check:checked + .b-checkbox__check-visible {
+  background-color : var(--r-color-primary);
+}
+
+.b-checkbox__check-visible {
+  position : absolute;
+  top      : 0;
+  left     : 0;
+  width    : 15px;
+  height   : 15px;
+  border   : 3px solid var(--r-color-primary);
+  display  : inline-block;
+}
+
+.b-checkbox__check:default + .b-checkbox__check-visible {
+  border : 3px solid var(--r-color-war);
+}
+
+/* Aparte del operador "not" pueden utilizarse operadores como "and" y "or" para concatenar condiciones
+  Ten en cuenta que si el navegador no soporta la regla @support nada de este codigo se tendrá en cuenta
+  */
+
+@supports not (default) {
+
+  .b-checkbox:before {
+    content : 'WTF BRO!!! Actualisate!!';
+    display : block;
+    color   : var(--r-color-war);
+  }
+}
+

@@ -9,6 +9,22 @@
   padding             : 30px;
 }
 
+.b-card__title, .b-card__text {
+  color : var(--r-color-gray-33);
+}
+
+.b-card--sec {
+  color : var(--r-color-war);
+}
+
+.b-card--sec .b-card__title {
+  color : currentColor;
+}
+
+.b-card--sec .b-card__sign {
+  color : currentColor;
+}
+
 @media (max-width : 480px) {
 
   .b-card {

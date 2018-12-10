@@ -18,7 +18,100 @@
   transition : filter .5s ease-in-out;
 }
 
-.b-gallery__img:hover, .b-gallery__img:focus {
+.b-gallery__img:matches(:hover, :focus, :active) {
   filter : grayscale(100%);
+}
+
+/* CODIGO DE MODIFICADOR .b-gallery__img-container--party */
+.b-gallery__img-container--party {
+  border   : 0;
+  position : relative;
+}
+
+.b-gallery__img-container--party .b-gallery__img {
+  transform : scale(0.96);
+}
+
+.b-gallery__img-container--party .b-gallery__background {
+  display          : block;
+  background-color : var(--r-color-primary);
+  width            : 100%;
+  height           : 100%;
+  position         : absolute;
+  top              : 0;
+  left             : 0;
+  z-index          : -1;
+}
+
+/*PARTY 0*/
+
+.b-gallery__img-container--party-0 :matches(.b-gallery__img, .b-gallery__background) {
+  clip-path : polygon(31% 5%, 99% 18%, 77% 91%, 11% 94%);
+}
+
+/*PARTY 1*/
+
+.b-gallery__img-container--party-1 :matches(.b-gallery__img, .b-gallery__background) {
+  clip-path : polygon(11% 9%, 72% 31%, 100% 100%, 0% 100%);
+}
+
+/*PARTY 2*/
+
+.b-gallery__img-container--party-2 :matches(.b-gallery__img, .b-gallery__background) {
+  clip-path : polygon(20% 0%, 100% 14%, 95% 91%, 0% 100%);
+}
+
+/*PARTY 3*/
+
+.b-gallery__img-container--party-3 :matches(.b-gallery__img, .b-gallery__background) {
+  clip-path : polygon(37% 21%, 81% 11%, 92% 93%, 0 63%);
+}
+
+/*PARTY 4*/
+
+.b-gallery__img-container--party-4 :matches(.b-gallery__img, .b-gallery__background) {
+  clip-path : polygon(28% 5%, 91% 35%, 92% 93%, 7% 94%);
+}
+
+/*PARTY 5*/
+
+.b-gallery__img-container--party-5 :matches(.b-gallery__img, .b-gallery__background) {
+  clip-path : polygon(11% 21%, 91% 15%, 93% 73%, 36% 92%);
+}
+
+/*PARTY 6*/
+
+.b-gallery__img-container--party-6 :matches(.b-gallery__img, .b-gallery__background) {
+  clip-path : polygon(9% 40%, 49% 5%, 100% 56%, 7% 94%);
+}
+
+/*PARTY 7*/
+
+.b-gallery__img-container--party-7 :matches(.b-gallery__img, .b-gallery__background) {
+  clip-path : polygon(9% 40%, 90% 7%, 89% 90%, 7% 94%);
+}
+
+/*PARTY 8*/
+
+.b-gallery__img-container--party-8 :matches(.b-gallery__img, .b-gallery__background) {
+  clip-path : polygon(31% 5%, 90% 6%, 93% 93%, 11% 94%);
+}
+
+/* Aparte del operador "not" pueden utilizarse operadores como "and" y "or" para concatenar condiciones
+  Ten en cuenta que si el navegador no soporta la regla @support nada de este codigo se tendrá en cuenta
+  */
+
+@supports not (clip-path: polygon(31% 5%, 99% 18%, 77% 91%, 11% 94%)) {
+
+  .b-gallery__img {
+    display : none;
+  }
+
+  .b-gallery__img-container:before {
+    content          : 'WTF BRO!!! Actualisate!!';
+    display          : block;
+    color            : var(--r-color-white);
+  }
+
 }
 

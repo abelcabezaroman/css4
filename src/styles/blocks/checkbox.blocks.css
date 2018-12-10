@@ -31,16 +31,3 @@
   border : 3px solid var(--r-color-war);
 }
 
-/* Aparte del operador "not" pueden utilizarse operadores como "and" y "or" para concatenar condiciones
-  Ten en cuenta que si el navegador no soporta la regla @support nada de este codigo se tendrá en cuenta
-  */
-
-@supports not (default) {
-
-  .b-checkbox:before {
-    content : 'WTF BRO!!! Actualisate!!';
-    display : block;
-    color   : var(--r-color-war);
-  }
-}
-

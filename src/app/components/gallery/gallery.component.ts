@@ -9,7 +9,8 @@ export class GalleryComponent implements OnInit {
 
   @Input() gallery: {
     title: string,
-    imgUrl: string
+    imgUrl: string,
+    class: string
   }[];
 
   constructor() {

@@ -11,6 +11,7 @@
 /*GLOBAL STYLES*/
 :root {
   --r-color-black         : #000;
+  --r-color-gray-33       : #333;
   --r-color-gray-50       : #ededed;
   --r-color-gray-90       : #fffeee;
   --r-color-white         : #fff;
@@ -24,6 +25,6 @@
 }
 
 body {
-  color       : #333;
+  color       : var(--r-color-gray-33);
   font-family : 'Raleway', sans-serif;
 }

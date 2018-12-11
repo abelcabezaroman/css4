@@ -7,6 +7,7 @@ import { ButtonComponent } from './components/button/button.component';
 import { ListComponent } from './components/list/list.component';
 import { CardComponent } from './components/card/card.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
+import { BudgetIconComponent } from './components/budget-icon/budget-icon.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { GalleryComponent } from './components/gallery/gallery.component';
     ButtonComponent,
     ListComponent,
     CardComponent,
-    GalleryComponent
+    GalleryComponent,
+    BudgetIconComponent
   ],
   imports: [
     BrowserModule,

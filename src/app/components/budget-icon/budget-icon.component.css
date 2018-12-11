@@ -1,0 +1,36 @@
+.b-budget-icon {
+  display : block;
+}
+
+.b-budget-icon__text:before {
+  content    : attr(data-content);
+  text-align : center;
+  display    : block;
+}
+
+.b-budget-icon__icon {
+  margin           : 0 auto;
+  background-color : transparent;
+  position         : relative;
+  display          : block;
+  justify-content  : center;
+  border-radius    : 100%;
+  height           : 46px;
+  width            : 46px;
+}
+
+.b-budget-icon:before {
+  font-size     : 15px;
+  color         : var(--r-color-white);
+  padding       : 6px;
+  border-radius : 100%;
+  border        : 4px solid transparent;
+}
+
+.b-budget-icon:after {
+  content       : '';
+  position      : absolute;
+  width         : calc(100% + 6px);
+  height        : calc(100% + 6px);
+  border-radius : 100%;
+}

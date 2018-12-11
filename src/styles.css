@@ -3,6 +3,7 @@
 @import url('styles/blocks.index.css');
 @import url('styles/objects.index.css');
 @import url('styles/utilities.index.css');
+@import url('styles/generic.index.css');
 /* 3 PARTY */
 @import url("~bootstrap/dist/css/bootstrap-grid.css");
 @import url("~normalize.css/normalize.css");
